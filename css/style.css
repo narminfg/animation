@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+body{
+    background-image: url(../photos/galaxy-png-5058.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.sun img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    padding: 1rem;
+    
+}
+.mercury{
+    border: 2px solid white;
+    border-radius: 100%;
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    top: 42.4%;
+    left: 46.2%;
+    transform: translate(-50%,-50%);
+    animation: spin 5s linear infinite;
+}
+.mercury img{
+    width: 25%;
+}
+.venus{
+    border: 2px solid white;
+    border-radius: 100%;
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+    top: 38.4%;
+    left: 44.4%;
+    transform: translate(-50%,-50%);
+    animation: spin 10s linear infinite;
+}
+.venus img{
+    width: 25%;
+}
+.earth{
+    border: 2px solid white;
+    border-radius: 100%;
+    position: absolute;
+    width: 16rem;
+    height: 16rem;
+    top: 34.3%;
+    left: 42.55%;
+    transform: translate(-50%,-50%);
+    animation: spin 15s linear infinite;
+}
+.earth img{
+    width: 20%;
+    position: absolute;
+    top: 70%;
+}
+.mars{
+    border: 2px solid white;
+    border-radius: 100%;
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    top: 30.4%;
+    left: 40.55%;
+    transform: translate(-50%,-50%);
+    animation: spin 20s linear infinite;
+}
+.falling-star{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    animation: fall 3s linear infinite;
+}
+.mars img{
+    width: 15%;
+    position: absolute;
+    top: 70%;
+}
+
+@keyframes fall {
+    from{
+        top: 0%;
+        left: 50%;
+    }
+    to{
+        top:30%;
+        left: 0;
+    }
+}
+@keyframes spin {
+    from{
+       
+       transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
